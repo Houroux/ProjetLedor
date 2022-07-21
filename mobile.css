@@ -1,0 +1,74 @@
+.fa-crown {
+  margin: auto 1rem auto 1rem;
+}
+.ledor {
+  margin: auto;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.droite {
+  margin-right: 0;
+}
+
+header .droite a {
+  text-align: center;
+}
+
+.t1 {
+  max-width: 80vw;
+  font-size: 8vw;
+  text-shadow: 0 0 6px black;
+}
+
+.p1 {
+  max-width: 80vw;
+  font-size: 5vw;
+  padding-top: 15vh;
+  text-shadow: 0 0 6px black;
+}
+
+.acquisitions {
+  padding: 2vh 5vw;
+  height: 135vh;
+}
+
+.appart {
+  display: flex;
+  flex-direction: column;
+}
+
+.appart0 {
+  flex: auto;
+  height: 40vh;
+  width: 85vw;
+  margin: 2vw;
+  text-align: center;
+  background-color: white;
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+}
+.equipe {
+  height: 80vh;
+  flex-direction: column;
+}
+
+.equipe .txt {
+  margin: auto;
+  text-align: center;
+  padding: 2vh 5vw;
+  text-shadow: 0 0 6px black;
+}
+
+.equipe .txt p {
+  font-size: 1.2rem;
+}
+
+.formulaire {
+  width: 90vw;
+}
+
+.envoyer {
+  width: 35vw;
+}
