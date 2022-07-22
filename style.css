@@ -79,9 +79,9 @@ header {
 }
 
 .acquisitions {
-  height: 80vh;
+  height: 70vh;
   background-color: aliceblue;
-  padding: 10vh 15vw;
+  padding: 10vh 10vw;
 }
 
 .appart {
@@ -261,7 +261,7 @@ input {
 
 .envoyer {
   flex: 1;
-  width: 10vw;
+  width: 8rem;
   margin: 2vh auto;
   border-radius: 3rem;
   background-color: rgb(224, 180, 0);
