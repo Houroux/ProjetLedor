@@ -45,7 +45,7 @@ header {
   margin-right: 2rem;
 }
 
-header .droite a {
+.droite a {
   padding-right: 1rem;
   padding-left: 1rem;
   font-size: 1rem;
@@ -154,13 +154,13 @@ header .droite a {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 90vh;
-  width: 70vw;
+  height: 95vh;
+  width: 80vw;
   margin: auto;
 }
 
 .client h2 {
-  margin: 5vh 0vw 7vh 0vw;
+  margin: 5vh 0vw 5vh 0vw;
   padding-bottom: 3vh;
   border-bottom: #222 1px solid;
 }
@@ -169,6 +169,8 @@ header .droite a {
   flex: 1;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .client .bloc2 {
   flex: 1;
@@ -182,17 +184,14 @@ header .droite a {
 }
 
 .profil {
-  flex: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .textclient {
-  flex: 4;
   margin: 1vh 3vw;
-  margin-right: 7vw;
 }
 
 .img1 {
@@ -252,6 +251,8 @@ input {
   border: 0;
   border-bottom: solid 1px;
   border-color: white;
+  outline: 0;
+  color: white;
 }
 
 .message {
