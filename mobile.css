@@ -1,47 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  background-color: azure;
+}
+
+/* Header */
+header {
+  display: flex;
+  height: 8vh;
+  background-color: #222;
+}
+/* gauche */
+.gauche {
+  flex-direction: row;
+  align-content: center;
+  display: flex;
+  flex: auto;
+  justify-content: start;
+}
 .fa-crown {
-  margin: auto 1rem auto 1rem;
+  color: yellow;
+  margin: auto 1rem auto 2rem;
 }
 .ledor {
-  margin: auto;
-  margin-right: 1rem;
-  font-size: 2rem;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
 }
+
+/* droite */
 
 .droite {
-  margin-right: 0;
+  flex-direction: row;
+  display: flex;
+  flex: auto;
+  justify-content: end;
+  align-items: center;
+  margin-right: 2rem;
 }
 
-header .droite a {
+.droite a {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  height: 92vh;
+  background: url(./images2/frame.jpg) center center/cover;
+  color: white;
   text-align: center;
 }
 
 .t1 {
-  max-width: 80vw;
-  font-size: 8vw;
-  text-shadow: 0 0 6px black;
+  padding-top: 25vh;
+  max-width: 50vw;
+  font-size: 3.5vw;
+  margin: auto;
+}
+
+.jaune {
+  color: rgb(224, 180, 0);
 }
 
 .p1 {
-  max-width: 80vw;
-  font-size: 5vw;
-  padding-top: 15vh;
-  text-shadow: 0 0 6px black;
+  max-width: 50vw;
+  margin: auto;
+  font-size: 1.5vw;
+  padding-top: 5vh;
 }
 
 .acquisitions {
-  padding: 2vh 5vw;
-  height: 135vh;
+  height: 70vh;
+  background-color: aliceblue;
+  padding: 10vh 10vw;
 }
 
 .appart {
   display: flex;
-  flex-direction: column;
 }
 
 .appart0 {
   flex: auto;
   height: 40vh;
-  width: 85vw;
+  width: 20vw;
   margin: 2vw;
   text-align: center;
   background-color: white;
@@ -49,26 +99,187 @@ header .droite a {
   display: flex;
   flex-direction: column;
 }
+
+.appart0 img {
+  flex: 5;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.appart0 p {
+  flex: 1;
+  font-size: 1rem;
+  padding-top: 2vh;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+.prix {
+  border: solid 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  padding-top: 2vh;
+  margin: 0px 1.2vw;
+  margin-top: 0px !important;
+}
+
 .equipe {
-  height: 80vh;
-  flex-direction: column;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #333;
+}
+
+.equipe .photo {
+  flex: 9;
+  background: url(./images2/team.jpg) center center/cover;
 }
 
 .equipe .txt {
-  margin: auto;
-  text-align: center;
-  padding: 2vh 5vw;
-  text-shadow: 0 0 6px black;
+  flex: 11;
+  margin: auto 2vw;
+  color: white;
 }
 
-.equipe .txt p {
-  font-size: 1.2rem;
+.equipe .txt h2 {
+  padding-bottom: 3vh;
+  font-size: 2.5rem;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 95vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.client h2 {
+  margin: 5vh 0vw 5vh 0vw;
+  padding-bottom: 3vh;
+  border-bottom: #222 1px solid;
+}
+
+.client .bloc1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.client .bloc2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.client .bloc3 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.textclient {
+  margin: 1vh 3vw;
+}
+
+.img1 {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background: url(./images2/person-1.jpg) center center/cover;
+}
+
+.img2 {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background: url(./images2/person-2.jpg) center center/cover;
+}
+.img3 {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background: url(./images2/person-3.jpg) center center/cover;
+}
+.nom {
+  margin-top: 2vh;
+  font-weight: bold;
+}
+
+.metier {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.containerformulaire {
+  background-color: #333;
+  height: 70vh;
 }
 
 .formulaire {
-  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+  height: 70vh;
+}
+
+.titreformulaire {
+  flex: 1;
+  text-align: center;
+  margin-top: 5vh;
+  color: white;
+}
+
+input {
+  font-size: 1.2rem;
+  flex: 1;
+  margin: 5vh 5vw;
+  background-color: #333;
+  border: 0;
+  border-bottom: solid 1px;
+  border-color: white;
+  outline: 0;
+  color: white;
+}
+
+.message {
+  padding: 5vh;
 }
 
 .envoyer {
-  width: 35vw;
+  flex: 1;
+  width: 8rem;
+  margin: 2vh auto;
+  border-radius: 3rem;
+  background-color: rgb(224, 180, 0);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: white 1px solid;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #222;
+  height: 10vh;
+}
+
+footer p {
+  padding: 3vh 0;
+  color: white;
+  text-align: center;
 }
